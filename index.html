@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader and Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h1 class="heading">Image Converter</h1>
+        <div id="imagePreview">
+            <img src="https://via.placeholder.com/150" id="previewImg">
+        </div>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <button id="uploadButton">Upload Image</button>
+
+        <div id="conversionButtons" class="button-group">
+            <button id="convertToJpeg" class="action-button">Convert to JPEG</button>
+            <button id="convertToPng" class="action-button">Convert to PNG</button>
+            <button id="convertToWebp" class="action-button">Convert to WebP</button>
+        </div>
+
+        <div id="resizeOptions">
+            <input type="number" id="resizeWidth" class="resize-input" placeholder="Width (px)">
+            <input type="number" id="resizeHeight" class="resize-input" placeholder="Height (px)">
+            <button id="resizePreviewButton" class="action-button">Preview Resized Image</button>
+            
+        </div>
+
+        <div id="resizedImagePreview"></div>
+        <button id="downloadResizedButton" class="button" style="display: none;">Download Resized Image</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
